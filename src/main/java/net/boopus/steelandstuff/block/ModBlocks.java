@@ -22,6 +22,11 @@ public class ModBlocks {
                     .mapColor(MapColor.RED)
             ));
 
+    public static final Block AUBURN_BLOCK = registerBlock("auburn_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)
+                    .mapColor(MapColor.RED)
+            ));
+
     public static final Block AUBURN_CHISELED_BRICKS = registerBlock("auburn_chiseled_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
                     .mapColor(MapColor.RED)

@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VERDANT);
 
                         entries.add(ModBlocks.AUBURN_BRICKS);
+                        entries.add(ModBlocks.AUBURN_BLOCK);
                         entries.add(ModBlocks.AUBURN_CHISELED_BRICKS);
 
                     }).build());

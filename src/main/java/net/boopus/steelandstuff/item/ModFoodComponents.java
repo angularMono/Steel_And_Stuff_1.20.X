@@ -1,4 +1,4 @@
-package net.boopus.steelandstuff.item.custom;
+package net.boopus.steelandstuff.item;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "steelandstuff",
+	"version": "${version}",
+	"name": "Steel and Stuff",
+	"description": "Building Blocks for the server",
+	"authors": [
+		"Jay"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.boopus.steelandstuff.Steelandstuff"
+		],
+		"client": [
+			"net.boopus.steelandstuff.SteelandstuffClient"
+		],
+		"fabric-datagen": [
+			"net.boopus.steelandstuff.SteelandstuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"steelandstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

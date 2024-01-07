@@ -19,6 +19,8 @@ public class ModItems {
     public static final Item MAUVE = registerItem("mauve", new Item(new FabricItemSettings()));
     public static final Item VERDANT = registerItem("verdant", new Item(new FabricItemSettings()));
 
+    public static final Item NETHER_COAL = registerItem("nether_coal", new Item(new FabricItemSettings()));
+
     public static final Item WARPED_STEW = registerItem("warped_stew", new Item(new FabricItemSettings().food(ModFoodComponents.WARPED_STEW)));
     public static final Item CRIMSON_STEW = registerItem("crimson_stew", new Item(new FabricItemSettings().food(ModFoodComponents.CRIMSON_STEW)));
 

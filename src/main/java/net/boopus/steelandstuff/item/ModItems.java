@@ -1,6 +1,7 @@
 package net.boopus.steelandstuff.item;
 
 import net.boopus.steelandstuff.Steelandstuff;
+import net.boopus.steelandstuff.item.custom.ModFoodComponents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -17,6 +18,9 @@ public class ModItems {
     public static final Item CERULEAN = registerItem("cerulean", new Item(new FabricItemSettings()));
     public static final Item MAUVE = registerItem("mauve", new Item(new FabricItemSettings()));
     public static final Item VERDANT = registerItem("verdant", new Item(new FabricItemSettings()));
+
+    public static final Item WARPED_STEW = registerItem("warped_stew", new Item(new FabricItemSettings().food(ModFoodComponents.WARPED_STEW)));
+    public static final Item CRIMSON_STEW = registerItem("crimson_stew", new Item(new FabricItemSettings().food(ModFoodComponents.CRIMSON_STEW)));
 
 
 

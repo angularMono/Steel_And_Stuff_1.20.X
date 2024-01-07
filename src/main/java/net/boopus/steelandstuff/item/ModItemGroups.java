@@ -16,7 +16,8 @@ public class ModItemGroups {
             new Identifier(Steelandstuff.MOD_ID, "steel_ingot"),
             FabricItemGroup.builder().displayName(Text.literal("Steel and Stuff"))
                     .icon(() -> new ItemStack(ModItems.STEEL_INGOT)).entries((displayContext, entries) -> {
-
+                        entries.add(ModItems.WARPED_STEW);
+                        entries.add(ModItems.CRIMSON_STEW);
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModItems.AUBURN);
                         entries.add(ModItems.CERULEAN);

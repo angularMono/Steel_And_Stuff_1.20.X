@@ -3,9 +3,9 @@
 	"id": "steelandstuff",
 	"version": "${version}",
 	"name": "Steel and Stuff",
-	"description": "Building Blocks for the server",
+	"description": "Building Blocks for the server as well as some tweaks",
 	"authors": [
-		"Jay"
+		"Jay, Lebothegizebo"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

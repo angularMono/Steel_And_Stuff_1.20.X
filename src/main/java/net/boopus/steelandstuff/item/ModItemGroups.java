@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup STEEL_AND_STUFF_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup STEEL_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Steelandstuff.MOD_ID, "steel_ingot"),
             FabricItemGroup.builder().displayName(Text.literal("Steel and Stuff"))
                     .icon(() -> new ItemStack(ModItems.STEEL_INGOT)).entries((displayContext, entries) -> {

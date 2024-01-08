@@ -1,12 +1,10 @@
 package net.boopus.steelandstuff.block;
 
 import net.boopus.steelandstuff.Steelandstuff;
+import net.boopus.steelandstuff.block.custom.ModStairsBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-
+    //blocks
     public static final Block AUBURN_BRICKS = registerBlock("auburn_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
                     .mapColor(MapColor.RED)
@@ -33,6 +31,20 @@ public class ModBlocks {
             ));
 
 
+
+    //stairs
+    public static final Block AUBURN_BRICK_STAIRS = registerBlock("auburn_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+
+            ));
+    //slabs
+    public static final Block AUBURN_BRICK_SLAB = registerBlock("auburn_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+            ));
+
+    //registering blocks into minecraft
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Steelandstuff.MOD_ID, name), block);

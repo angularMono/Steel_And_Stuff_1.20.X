@@ -1,6 +1,7 @@
 package net.boopus.steelandstuff.datagen;
 
 import net.boopus.steelandstuff.block.ModBlocks;
+import net.boopus.steelandstuff.block.custom.ModStairsBlock;
 import net.boopus.steelandstuff.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -18,6 +19,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.MYCELIAL_BLOCKS)
                 .add(ModBlocks.AUBURN_CHISELED_BRICKS)
                 .add(ModBlocks.AUBURN_BRICKS)
-                .add(ModBlocks.AUBURN_BLOCK);
+                .add(ModBlocks.AUBURN_BLOCK)
+                .add(ModBlocks.AUBURN_BRICK_SLAB)
+                .add(ModBlocks.AUBURN_BRICK_STAIRS);
     }
 }

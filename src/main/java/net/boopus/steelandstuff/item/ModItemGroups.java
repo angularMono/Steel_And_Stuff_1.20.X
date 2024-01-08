@@ -28,6 +28,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AUBURN_BRICKS);
                         entries.add(ModBlocks.AUBURN_BLOCK);
                         entries.add(ModBlocks.AUBURN_CHISELED_BRICKS);
+                        entries.add(ModBlocks.AUBURN_BRICK_SLAB);
+                        entries.add(ModBlocks.AUBURN_BRICK_STAIRS);
 
                     }).build());
 

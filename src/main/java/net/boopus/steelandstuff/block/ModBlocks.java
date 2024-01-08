@@ -13,6 +13,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    //debug blocks
+    public static final Block ERROR_BLOCK = registerBlock("error_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)
+                    .mapColor(MapColor.RED)
+            ));
 
     //blocks
     public static final Block AUBURN_BRICKS = registerBlock("auburn_bricks",
@@ -38,6 +43,17 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
 
             ));
+        public static final Block AUBURN_CHISELED_BRICK_STAIRS = registerBlock("auburn_chiseled_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+
+            ));
+        public static final Block AUBURN_STAIRS = registerBlock("auburn_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+
+            ));
+
     //slabs
     public static final Block AUBURN_BRICK_SLAB = registerBlock("auburn_brick_slab",
             new SlabBlock(

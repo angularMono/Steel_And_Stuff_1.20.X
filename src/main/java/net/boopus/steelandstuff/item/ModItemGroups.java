@@ -11,6 +11,19 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+    //debug group
+    public static final ItemGroup DEV_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Steelandstuff.MOD_ID, "error_block"),
+            FabricItemGroup.builder().displayName(Text.literal("UNDER DEVELOPMENT"))
+                    .icon(() -> new ItemStack(ModBlocks.ERROR_BLOCK)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS);
+                        entries.add(ModBlocks.AUBURN_STAIRS);
+
+
+
+                    }).build());
+
+    //actual mod groups
 
     public static final ItemGroup STEEL_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Steelandstuff.MOD_ID, "steel_ingot"),
@@ -32,6 +45,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AUBURN_BRICK_STAIRS);
 
                     }).build());
+
 
 
 

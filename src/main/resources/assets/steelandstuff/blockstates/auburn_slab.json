@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "steelandstuff:block/auburn_slab"
+    },
+    "type=double": {
+      "model": "steelandstuff:block/auburn_block"
+    },
+    "type=top": {
+      "model": "steelandstuff:block/auburn_slab_top"
+    }
+  }
+}

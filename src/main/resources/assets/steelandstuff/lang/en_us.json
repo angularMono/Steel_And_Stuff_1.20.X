@@ -13,6 +13,11 @@
   "block.steelandstuff.auburn_chiseled_bricks": "Chiseled Auburn Bricks",
   "block.steelandstuff.auburn_brick_slab": "Auburn Brick Slab",
   "block.steelandstuff.auburn_brick_stairs": "Auburn Brick Stairs",
+  "block.steelandstuff.auburn_chiseled_brick_stairs": "Auburn Chiseled Brick Stairs",
+  "block.steelandstuff.auburn_stairs": "Auburn Stairs",
+  "block.steelandstuff.auburn_chiseled_brick_slab": "Auburn Chiseled Brick Slab",
+  "block.steelandstuff.auburn_slab": "Auburn Slab",
+
 
   "itemgroup.auburn": "Steel and Stuff"
 }

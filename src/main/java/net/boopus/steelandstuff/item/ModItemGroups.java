@@ -18,7 +18,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.ERROR_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS);
                         entries.add(ModBlocks.AUBURN_STAIRS);
-
+                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_SLAB);
+                        entries.add(ModBlocks.AUBURN_SLAB);
 
 
                     }).build());

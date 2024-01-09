@@ -59,6 +59,14 @@ public class ModBlocks {
             new SlabBlock(
                     FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
             ));
+    public static final Block AUBURN_CHISELED_BRICK_SLAB = registerBlock("auburn_chiseled_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+            ));
+    public static final Block AUBURN_SLAB = registerBlock("auburn_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+            ));
 
     //registering blocks into minecraft
     private static Block registerBlock(String name, Block block){

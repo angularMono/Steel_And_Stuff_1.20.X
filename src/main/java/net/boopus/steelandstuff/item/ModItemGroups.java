@@ -16,11 +16,11 @@ public class ModItemGroups {
             new Identifier(Steelandstuff.MOD_ID, "error_block"),
             FabricItemGroup.builder().displayName(Text.literal("UNDER DEVELOPMENT"))
                     .icon(() -> new ItemStack(ModBlocks.ERROR_BLOCK)).entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS);
-                        entries.add(ModBlocks.AUBURN_STAIRS);
-                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_SLAB);
-                        entries.add(ModBlocks.AUBURN_SLAB);
-
+                        entries.add(ModBlocks.VERDANT_BLOCK);
+                        entries.add(ModBlocks.VERDANT_BRICKS);
+                        entries.add(ModBlocks.VERDANT_CHISELED_BRICKS);
+                        entries.add(ModBlocks.ERROR_BLOCK);
+                        entries.add(ModItems.NETHER_COAL);
 
                     }).build());
 
@@ -30,21 +30,28 @@ public class ModItemGroups {
             new Identifier(Steelandstuff.MOD_ID, "steel_ingot"),
             FabricItemGroup.builder().displayName(Text.literal("Steel and Stuff"))
                     .icon(() -> new ItemStack(ModItems.STEEL_INGOT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.NETHER_COAL);
+                        //food
                         entries.add(ModItems.WARPED_STEW);
                         entries.add(ModItems.CRIMSON_STEW);
+                        //steel
                         entries.add(ModItems.STEEL_INGOT);
-                        entries.add(ModItems.AUBURN);
+                        //cerulean
                         entries.add(ModItems.CERULEAN);
+                        //mauve
                         entries.add(ModItems.MAUVE);
+                        //verdant
                         entries.add(ModItems.VERDANT);
-
-                        entries.add(ModBlocks.AUBURN_BRICKS);
+                        //auburn
+                        entries.add(ModItems.AUBURN);
                         entries.add(ModBlocks.AUBURN_BLOCK);
+                        entries.add(ModBlocks.AUBURN_BRICKS);
                         entries.add(ModBlocks.AUBURN_CHISELED_BRICKS);
-                        entries.add(ModBlocks.AUBURN_BRICK_SLAB);
+                        entries.add(ModBlocks.AUBURN_STAIRS);
                         entries.add(ModBlocks.AUBURN_BRICK_STAIRS);
-
+                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS);
+                        entries.add(ModBlocks.AUBURN_SLAB);
+                        entries.add(ModBlocks.AUBURN_BRICK_SLAB);
+                        entries.add(ModBlocks.AUBURN_CHISELED_BRICK_SLAB);
                     }).build());
 
 

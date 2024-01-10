@@ -34,6 +34,18 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
                     .mapColor(MapColor.RED)
             ));
+    public static final Block VERDANT_BLOCK = registerBlock("verdant_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block VERDANT_BRICKS = registerBlock("verdant_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block VERDANT_CHISELED_BRICKS = registerBlock("verdant_chiseled_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
 
 
 

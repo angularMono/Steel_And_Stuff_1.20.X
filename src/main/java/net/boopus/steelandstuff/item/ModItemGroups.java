@@ -16,9 +16,6 @@ public class ModItemGroups {
             new Identifier(Steelandstuff.MOD_ID, "error_block"),
             FabricItemGroup.builder().displayName(Text.literal("UNDER DEVELOPMENT"))
                     .icon(() -> new ItemStack(ModBlocks.ERROR_BLOCK)).entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.VERDANT_BLOCK);
-                        entries.add(ModBlocks.VERDANT_BRICKS);
-                        entries.add(ModBlocks.VERDANT_CHISELED_BRICKS);
                         entries.add(ModBlocks.ERROR_BLOCK);
                         entries.add(ModItems.NETHER_COAL);
 
@@ -41,6 +38,10 @@ public class ModItemGroups {
                         entries.add(ModItems.MAUVE);
                         //verdant
                         entries.add(ModItems.VERDANT);
+                        entries.add(ModBlocks.VERDANT_BLOCK);
+                        entries.add(ModBlocks.VERDANT_BRICKS);
+                        entries.add(ModBlocks.VERDANT_CHISELED_BRICKS);
+
                         //auburn
                         entries.add(ModItems.AUBURN);
                         entries.add(ModBlocks.AUBURN_BLOCK);

@@ -50,9 +50,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.AUBURN_CHISELED_BRICKS))
                 .criterion(hasItem(ModBlocks.AUBURN_CHISELED_BRICKS),conditionsFromItem(ModBlocks.AUBURN_CHISELED_BRICKS))
                 .offerTo(exporter);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_STAIRS,ModBlocks.AUBURN_BLOCK,2);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_BRICK_STAIRS,ModBlocks.AUBURN_BRICKS,2);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_CHISELED_BRICK_STAIRS,ModBlocks.AUBURN_CHISELED_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_STAIRS,ModBlocks.AUBURN_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_BRICK_STAIRS,ModBlocks.AUBURN_BRICKS,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AUBURN_CHISELED_BRICK_STAIRS,ModBlocks.AUBURN_CHISELED_BRICKS,1);
 
         //verdant
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANT, 8)

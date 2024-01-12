@@ -29,9 +29,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AUBURN_CHISELED_BRICK_SLAB)
                 .add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS)
                 //verdant
-                .add(ModBlocks.VERDANT_BLOCK)
+                .add(ModBlocks.VERDANT_CHISELED_BRICKS)
                 .add(ModBlocks.VERDANT_BRICKS)
-                .add(ModBlocks.VERDANT_CHISELED_BRICKS);
+                .add(ModBlocks.VERDANT_BLOCK)
+                .add(ModBlocks.VERDANT_BRICK_SLAB)
+                .add(ModBlocks.VERDANT_BRICK_STAIRS)
+                .add(ModBlocks.VERDANT_SLAB)
+                .add(ModBlocks.VERDANT_STAIRS)
+                .add(ModBlocks.VERDANT_CHISELED_BRICK_SLAB)
+                .add(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 //auburn
@@ -45,10 +51,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AUBURN_CHISELED_BRICK_SLAB)
                 .add(ModBlocks.AUBURN_CHISELED_BRICK_STAIRS)
                 //verdant
-                .add(ModBlocks.VERDANT_BLOCK)
-                .add(ModBlocks.VERDANT_BRICKS)
                 .add(ModBlocks.VERDANT_CHISELED_BRICKS)
-                
+                .add(ModBlocks.VERDANT_BRICKS)
+                .add(ModBlocks.VERDANT_BLOCK)
+                .add(ModBlocks.VERDANT_BRICK_SLAB)
+                .add(ModBlocks.VERDANT_BRICK_STAIRS)
+                .add(ModBlocks.VERDANT_SLAB)
+                .add(ModBlocks.VERDANT_STAIRS)
+                .add(ModBlocks.VERDANT_CHISELED_BRICK_SLAB)
+                .add(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS)
+
                 //other
                 .add(ModBlocks.ERROR_BLOCK);
 

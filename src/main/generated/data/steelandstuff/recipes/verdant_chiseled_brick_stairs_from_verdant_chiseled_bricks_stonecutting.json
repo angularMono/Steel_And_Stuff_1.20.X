@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "steelandstuff:verdant_chiseled_bricks"
+  },
+  "result": "steelandstuff:verdant_chiseled_brick_stairs"
+}

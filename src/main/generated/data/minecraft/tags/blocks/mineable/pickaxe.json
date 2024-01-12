@@ -10,9 +10,15 @@
     "steelandstuff:auburn_stairs",
     "steelandstuff:auburn_chiseled_brick_slab",
     "steelandstuff:auburn_chiseled_brick_stairs",
-    "steelandstuff:verdant_block",
-    "steelandstuff:verdant_bricks",
     "steelandstuff:verdant_chiseled_bricks",
+    "steelandstuff:verdant_bricks",
+    "steelandstuff:verdant_block",
+    "steelandstuff:verdant_brick_slab",
+    "steelandstuff:verdant_brick_stairs",
+    "steelandstuff:verdant_slab",
+    "steelandstuff:verdant_stairs",
+    "steelandstuff:verdant_chiseled_brick_slab",
+    "steelandstuff:verdant_chiseled_brick_stairs",
     "steelandstuff:error_block"
   ]
 }

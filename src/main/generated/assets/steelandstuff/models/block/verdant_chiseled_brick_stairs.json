@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "steelandstuff:block/verdant_chiseled_bricks",
+    "side": "steelandstuff:block/verdant_chiseled_bricks",
+    "top": "steelandstuff:block/verdant_chiseled_bricks"
+  }
+}

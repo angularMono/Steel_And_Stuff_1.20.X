@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "steelandstuff:block/verdant_slab"
+    },
+    "type=double": {
+      "model": "steelandstuff:block/verdant_block"
+    },
+    "type=top": {
+      "model": "steelandstuff:block/verdant_slab_top"
+    }
+  }
+}

@@ -30,7 +30,12 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool verdant_block = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VERDANT_BLOCK);
         BlockStateModelGenerator.BlockTexturePool verdant_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VERDANT_BRICKS);
         BlockStateModelGenerator.BlockTexturePool verdant_chiseled_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VERDANT_CHISELED_BRICKS);
-
+        verdant_block.stairs(ModBlocks.VERDANT_STAIRS);
+        verdant_block.slab(ModBlocks.VERDANT_SLAB);
+        verdant_bricks.stairs(ModBlocks.VERDANT_BRICK_STAIRS);
+        verdant_bricks.slab(ModBlocks.VERDANT_BRICK_SLAB);
+        verdant_chiseled_bricks.stairs(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS);
+        verdant_chiseled_bricks.slab(ModBlocks.VERDANT_CHISELED_BRICK_SLAB);
         //other
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ERROR_BLOCK);
 

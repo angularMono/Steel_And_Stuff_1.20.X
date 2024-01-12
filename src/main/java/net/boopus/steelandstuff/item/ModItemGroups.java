@@ -41,6 +41,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VERDANT_BLOCK);
                         entries.add(ModBlocks.VERDANT_BRICKS);
                         entries.add(ModBlocks.VERDANT_CHISELED_BRICKS);
+                        entries.add(ModBlocks.VERDANT_STAIRS);
+                        entries.add(ModBlocks.VERDANT_BRICK_STAIRS);
+                        entries.add(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS);
+                        entries.add(ModBlocks.VERDANT_SLAB);
+                        entries.add(ModBlocks.VERDANT_BRICK_SLAB);
+                        entries.add(ModBlocks.VERDANT_CHISELED_BRICK_SLAB);
+
+
 
                         //auburn
                         entries.add(ModItems.AUBURN);

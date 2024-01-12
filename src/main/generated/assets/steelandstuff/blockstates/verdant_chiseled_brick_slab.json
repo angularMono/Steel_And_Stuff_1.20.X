@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "steelandstuff:block/verdant_chiseled_brick_slab"
+    },
+    "type=double": {
+      "model": "steelandstuff:block/verdant_chiseled_bricks"
+    },
+    "type=top": {
+      "model": "steelandstuff:block/verdant_chiseled_brick_slab_top"
+    }
+  }
+}

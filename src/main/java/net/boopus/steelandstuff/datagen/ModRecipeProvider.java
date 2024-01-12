@@ -64,5 +64,31 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(Items.BROWN_MUSHROOM), conditionsFromItem(Items.BROWN_MUSHROOM))
                 .offerTo(exporter, new Identifier("steelandstuff", "create_verdant.json"));
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_BLOCK,ModItems.VERDANT);
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_BRICKS, ModBlocks.VERDANT_BLOCK);
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_CHISELED_BRICKS, ModBlocks.VERDANT_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_BRICKS,ModBlocks.VERDANT_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_CHISELED_BRICKS,ModBlocks.VERDANT_BRICKS,1);
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.VERDANT_SLAB, ModBlocks.VERDANT_BLOCK);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.VERDANT_BRICK_SLAB, ModBlocks.VERDANT_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.VERDANT_CHISELED_BRICK_SLAB,ModBlocks.VERDANT_CHISELED_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_SLAB,ModBlocks.VERDANT_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_BRICK_SLAB,ModBlocks.VERDANT_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_CHISELED_BRICK_SLAB,ModBlocks.VERDANT_CHISELED_BRICKS,2);
+
+        createStairsRecipe(ModBlocks.VERDANT_STAIRS, Ingredient.ofItems(ModBlocks.VERDANT_BLOCK))
+                .criterion(hasItem(ModBlocks.VERDANT_BLOCK),conditionsFromItem(ModBlocks.VERDANT_BLOCK))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.VERDANT_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.VERDANT_BRICKS))
+                .criterion(hasItem(ModBlocks.VERDANT_BRICKS),conditionsFromItem(ModBlocks.VERDANT_BRICKS))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.VERDANT_CHISELED_BRICKS))
+                .criterion(hasItem(ModBlocks.VERDANT_CHISELED_BRICKS),conditionsFromItem(ModBlocks.VERDANT_CHISELED_BRICKS))
+                .offerTo(exporter);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_STAIRS,ModBlocks.VERDANT_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_BRICK_STAIRS,ModBlocks.VERDANT_BRICKS,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANT_CHISELED_BRICK_STAIRS,ModBlocks.VERDANT_CHISELED_BRICKS,1);
+
     }
 }

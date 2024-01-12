@@ -66,6 +66,22 @@ public class ModBlocks {
 
             ));
 
+    public static final Block VERDANT_STAIRS = registerBlock("verdant_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+
+            ));
+    public static final Block VERDANT_BRICK_STAIRS = registerBlock("verdant_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+
+            ));
+    public static final Block VERDANT_CHISELED_BRICK_STAIRS = registerBlock("verdant_chiseled_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+
+            ));
+
     //slabs
     public static final Block AUBURN_BRICK_SLAB = registerBlock("auburn_brick_slab",
             new SlabBlock(
@@ -78,6 +94,18 @@ public class ModBlocks {
     public static final Block AUBURN_SLAB = registerBlock("auburn_slab",
             new SlabBlock(
                     FabricBlockSettings.copyOf(ModBlocks.AUBURN_BRICKS)
+            ));
+    public static final Block VERDANT_SLAB = registerBlock("verdant_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+            ));
+    public static final Block VERDANT_BRICK_SLAB = registerBlock("verdant_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+            ));
+    public static final Block VERDANT_CHISELED_BRICK_SLAB = registerBlock("verdant_chiseled_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
             ));
 
     //registering blocks into minecraft

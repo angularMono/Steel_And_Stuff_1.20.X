@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "steelandstuff:block/verdant_bricks",
+    "side": "steelandstuff:block/verdant_bricks",
+    "top": "steelandstuff:block/verdant_bricks"
+  }
+}

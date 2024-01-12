@@ -21,7 +21,7 @@ public class ModFoodComponents {
             .hunger(5)
             .saturationModifier(0.25f)
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 300), 1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 1), 0.4f)
             .build();
 
 }

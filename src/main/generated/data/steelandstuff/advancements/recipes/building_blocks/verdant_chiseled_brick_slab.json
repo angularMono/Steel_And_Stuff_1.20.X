@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "steelandstuff:verdant_chiseled_brick_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_chiseled_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "steelandstuff:verdant_chiseled_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_chiseled_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "steelandstuff:verdant_chiseled_brick_slab"
+    ]
+  }
+}

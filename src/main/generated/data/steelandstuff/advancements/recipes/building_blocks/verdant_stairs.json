@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "steelandstuff:verdant_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "steelandstuff:verdant_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "steelandstuff:verdant_stairs"
+    ]
+  }
+}

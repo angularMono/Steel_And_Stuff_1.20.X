@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "steelandstuff:block/auburn_block",
-    "top": "steelandstuff:block/auburn_block",
-    "side": "steelandstuff:block/auburn_block"
-  }
-}

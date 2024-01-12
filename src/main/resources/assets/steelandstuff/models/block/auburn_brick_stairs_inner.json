@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "steelandstuff:block/auburn_bricks",
-    "top": "steelandstuff:block/auburn_bricks",
-    "side": "steelandstuff:block/auburn_bricks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "steelandstuff:auburn_block"
-  },
-  "result": "steelandstuff:auburn_chiseled_bricks",
-  "count": 1
-}

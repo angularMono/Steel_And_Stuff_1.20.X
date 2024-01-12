@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "steelandstuff:auburn_bricks"
+  },
+  "result": "steelandstuff:auburn_brick_slab"
+}

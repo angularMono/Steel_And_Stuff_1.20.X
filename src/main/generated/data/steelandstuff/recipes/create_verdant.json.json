@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SMS",
+    "SSS"
+  ],
+  "result": {
+    "count": 8,
+    "item": "steelandstuff:verdant"
+  }
+}

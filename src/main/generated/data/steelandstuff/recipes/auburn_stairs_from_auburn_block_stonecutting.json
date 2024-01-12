@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "steelandstuff:auburn_block"
+  },
+  "result": "steelandstuff:auburn_stairs"
+}

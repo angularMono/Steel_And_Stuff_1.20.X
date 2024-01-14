@@ -34,6 +34,15 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_INGOT);
                         //cerulean
                         entries.add(ModItems.CERULEAN);
+                        entries.add(ModBlocks.CERULEAN_BLOCK);
+                        entries.add(ModBlocks.CERULEAN_BRICKS);
+                        entries.add(ModBlocks.CERULEAN_CHISELED_BRICKS);
+                        entries.add(ModBlocks.CERULEAN_STAIRS);
+                        entries.add(ModBlocks.CERULEAN_BRICK_STAIRS);
+                        entries.add(ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS);
+                        entries.add(ModBlocks.CERULEAN_SLAB);
+                        entries.add(ModBlocks.CERULEAN_BRICK_SLAB);
+                        entries.add(ModBlocks.CERULEAN_CHISELED_BRICK_SLAB);
                         //mauve
                         entries.add(ModItems.MAUVE);
                         //verdant

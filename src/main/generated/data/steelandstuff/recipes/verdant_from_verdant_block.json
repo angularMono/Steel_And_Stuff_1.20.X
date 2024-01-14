@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "verdant_block_to_verdant",
+  "ingredients": [
+    {
+      "item": "steelandstuff:verdant_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "steelandstuff:verdant"
+  }
+}

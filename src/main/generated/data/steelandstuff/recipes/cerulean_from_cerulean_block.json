@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cerulean_block_to_cerulean",
+  "ingredients": [
+    {
+      "item": "steelandstuff:cerulean_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "steelandstuff:cerulean"
+  }
+}

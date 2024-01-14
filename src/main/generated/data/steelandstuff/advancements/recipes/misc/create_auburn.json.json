@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_mushroom": {
+    "has_crimson_fungus": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:red_mushroom"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_stone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:stone"
+              "minecraft:crimson_fungus"
             ]
           }
         ]
@@ -35,8 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stone",
-      "has_red_mushroom"
+      "has_crimson_fungus"
     ]
   ],
   "rewards": {

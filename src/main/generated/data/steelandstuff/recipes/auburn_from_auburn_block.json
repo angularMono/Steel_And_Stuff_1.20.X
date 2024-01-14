@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "auburn_block_to_auburn",
+  "ingredients": [
+    {
+      "item": "steelandstuff:auburn_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "steelandstuff:auburn"
+  }
+}

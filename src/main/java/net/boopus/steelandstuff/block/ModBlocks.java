@@ -20,15 +20,17 @@ public class ModBlocks {
             ));
 
     //blocks
-    public static final Block AUBURN_BRICKS = registerBlock("auburn_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
-                    .mapColor(MapColor.RED)
-            ));
 
     public static final Block AUBURN_BLOCK = registerBlock("auburn_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)
                     .mapColor(MapColor.RED)
             ));
+
+    public static final Block AUBURN_BRICKS = registerBlock("auburn_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+
 
     public static final Block AUBURN_CHISELED_BRICKS = registerBlock("auburn_chiseled_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
@@ -46,6 +48,19 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
                     .mapColor(MapColor.RED)
             ));
+    public static final Block CERULEAN_BLOCK = registerBlock("cerulean_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block CERULEAN_BRICKS = registerBlock("cerulean_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block CERULEAN_CHISELED_BRICKS = registerBlock("cerulean_chiseled_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+
 
 
 
@@ -81,6 +96,22 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
 
             ));
+    public static final Block CERULEAN_STAIRS = registerBlock("cerulean_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
+
+            ));
+    public static final Block CERULEAN_BRICK_STAIRS = registerBlock("cerulean_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
+
+            ));
+    public static final Block CERULEAN_CHISELED_BRICK_STAIRS = registerBlock("cerulean_chiseled_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+
+            ));
+
 
     //slabs
     public static final Block AUBURN_BRICK_SLAB = registerBlock("auburn_brick_slab",
@@ -106,6 +137,18 @@ public class ModBlocks {
     public static final Block VERDANT_CHISELED_BRICK_SLAB = registerBlock("verdant_chiseled_brick_slab",
             new SlabBlock(
                     FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+            ));
+    public static final Block CERULEAN_SLAB = registerBlock("cerulean_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
+            ));
+    public static final Block CERULEAN_BRICK_SLAB = registerBlock("cerulean_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
+            ));
+    public static final Block CERULEAN_CHISELED_BRICK_SLAB = registerBlock("cerulean_chiseled_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
             ));
 
     //registering blocks into minecraft

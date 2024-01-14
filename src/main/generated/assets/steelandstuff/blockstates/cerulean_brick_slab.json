@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "steelandstuff:block/cerulean_brick_slab"
+    },
+    "type=double": {
+      "model": "steelandstuff:block/cerulean_bricks"
+    },
+    "type=top": {
+      "model": "steelandstuff:block/cerulean_brick_slab_top"
+    }
+  }
+}

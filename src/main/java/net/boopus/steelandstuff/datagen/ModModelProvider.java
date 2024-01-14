@@ -36,6 +36,17 @@ public class ModModelProvider extends FabricModelProvider {
         verdant_bricks.slab(ModBlocks.VERDANT_BRICK_SLAB);
         verdant_chiseled_bricks.stairs(ModBlocks.VERDANT_CHISELED_BRICK_STAIRS);
         verdant_chiseled_bricks.slab(ModBlocks.VERDANT_CHISELED_BRICK_SLAB);
+        //cerulean
+        BlockStateModelGenerator.BlockTexturePool cerulean_block = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CERULEAN_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool cerulean_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CERULEAN_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool cerulean_chiseled_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CERULEAN_CHISELED_BRICKS);
+        cerulean_block.stairs(ModBlocks.CERULEAN_STAIRS);
+        cerulean_block.slab(ModBlocks.CERULEAN_SLAB);
+        cerulean_bricks.stairs(ModBlocks.CERULEAN_BRICK_STAIRS);
+        cerulean_bricks.slab(ModBlocks.CERULEAN_BRICK_SLAB);
+        cerulean_chiseled_bricks.stairs(ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS);
+        cerulean_chiseled_bricks.slab(ModBlocks.CERULEAN_CHISELED_BRICK_SLAB);
+
         //other
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ERROR_BLOCK);
 

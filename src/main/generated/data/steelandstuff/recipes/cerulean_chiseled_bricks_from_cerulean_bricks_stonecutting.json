@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "steelandstuff:cerulean_bricks"
+  },
+  "result": "steelandstuff:cerulean_chiseled_bricks"
+}

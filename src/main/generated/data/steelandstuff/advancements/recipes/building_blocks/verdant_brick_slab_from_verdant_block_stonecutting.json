@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:verdant_brick_slab_from_verdant_block_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "steelandstuff:verdant_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdant_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:verdant_brick_slab_from_verdant_block_stonecutting"
+    ]
+  }
+}

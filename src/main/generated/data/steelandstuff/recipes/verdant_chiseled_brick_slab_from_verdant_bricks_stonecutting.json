@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "steelandstuff:verdant_bricks"
+  },
+  "result": "steelandstuff:verdant_chiseled_brick_slab"
+}

@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stone": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:stone"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "steelandstuff:create_verdant.json"
@@ -35,7 +23,6 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stone",
       "has_brown_mushroom"
     ]
   ],

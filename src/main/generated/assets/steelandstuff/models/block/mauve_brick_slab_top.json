@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "steelandstuff:block/mauve_bricks",
+    "side": "steelandstuff:block/mauve_bricks",
+    "top": "steelandstuff:block/mauve_bricks"
+  }
+}

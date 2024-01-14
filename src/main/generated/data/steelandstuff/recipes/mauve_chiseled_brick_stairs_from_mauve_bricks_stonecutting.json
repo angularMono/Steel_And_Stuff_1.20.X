@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "steelandstuff:mauve_bricks"
+  },
+  "result": "steelandstuff:mauve_chiseled_brick_stairs"
+}

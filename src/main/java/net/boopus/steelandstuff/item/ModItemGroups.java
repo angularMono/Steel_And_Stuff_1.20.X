@@ -32,6 +32,13 @@ public class ModItemGroups {
                         entries.add(ModItems.CRIMSON_STEW);
                         //steel
                         entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.RAW_STEEL);
+                        entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.STEEL_REINFORCED_BLOCK);
+                        entries.add(ModBlocks.STEEL_STAIRS);
+                        entries.add(ModBlocks.STEEL_REINFORCED_STAIRS);
+                        entries.add(ModBlocks.STEEL_SLAB);
+                        entries.add(ModBlocks.STEEL_REINFORCED_SLAB);
                         //cerulean
                         entries.add(ModItems.CERULEAN);
                         entries.add(ModBlocks.CERULEAN_BLOCK);
@@ -45,6 +52,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CERULEAN_CHISELED_BRICK_SLAB);
                         //mauve
                         entries.add(ModItems.MAUVE);
+                        entries.add(ModBlocks.MAUVE_BLOCK);
+                        entries.add(ModBlocks.MAUVE_BRICKS);
+                        entries.add(ModBlocks.MAUVE_CHISELED_BRICKS);
+                        entries.add(ModBlocks.MAUVE_STAIRS);
+                        entries.add(ModBlocks.MAUVE_BRICK_STAIRS);
+                        entries.add(ModBlocks.MAUVE_CHISELED_BRICK_STAIRS);
+                        entries.add(ModBlocks.MAUVE_SLAB);
+                        entries.add(ModBlocks.MAUVE_BRICK_SLAB);
+                        entries.add(ModBlocks.MAUVE_CHISELED_BRICK_SLAB);
                         //verdant
                         entries.add(ModItems.VERDANT);
                         entries.add(ModBlocks.VERDANT_BLOCK);

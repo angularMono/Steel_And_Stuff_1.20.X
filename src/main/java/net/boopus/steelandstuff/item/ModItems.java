@@ -22,7 +22,7 @@ public class ModItems {
 
     public static final Item WARPED_STEW = registerItem("warped_stew", new Item(new FabricItemSettings().food(ModFoodComponents.WARPED_STEW)));
     public static final Item CRIMSON_STEW = registerItem("crimson_stew", new Item(new FabricItemSettings().food(ModFoodComponents.CRIMSON_STEW)));
-
+    public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings()));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
@@ -31,6 +31,7 @@ public class ModItems {
         entries.add(CERULEAN);
         entries.add(MAUVE);
         entries.add(VERDANT);
+        entries.add(RAW_STEEL);
     }
 
 

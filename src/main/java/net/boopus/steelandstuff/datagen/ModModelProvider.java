@@ -46,7 +46,23 @@ public class ModModelProvider extends FabricModelProvider {
         cerulean_bricks.slab(ModBlocks.CERULEAN_BRICK_SLAB);
         cerulean_chiseled_bricks.stairs(ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS);
         cerulean_chiseled_bricks.slab(ModBlocks.CERULEAN_CHISELED_BRICK_SLAB);
-
+        //mauve
+        BlockStateModelGenerator.BlockTexturePool mauve_block = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAUVE_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool mauve_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAUVE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool mauve_chiseled_bricks = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAUVE_CHISELED_BRICKS);
+        mauve_block.stairs(ModBlocks.MAUVE_STAIRS);
+        mauve_block.slab(ModBlocks.MAUVE_SLAB);
+        mauve_bricks.stairs(ModBlocks.MAUVE_BRICK_STAIRS);
+        mauve_bricks.slab(ModBlocks.MAUVE_BRICK_SLAB);
+        mauve_chiseled_bricks.stairs(ModBlocks.MAUVE_CHISELED_BRICK_STAIRS);
+        mauve_chiseled_bricks.slab(ModBlocks.MAUVE_CHISELED_BRICK_SLAB);
+        //steel
+        BlockStateModelGenerator.BlockTexturePool steel_block = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool steel_reinforced_block = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_REINFORCED_BLOCK);
+        steel_block.stairs(ModBlocks.STEEL_STAIRS);
+        steel_reinforced_block.stairs(ModBlocks.STEEL_REINFORCED_STAIRS);
+        steel_block.slab(ModBlocks.STEEL_SLAB);
+        steel_reinforced_block.slab(ModBlocks.STEEL_REINFORCED_SLAB);
         //other
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ERROR_BLOCK);
 
@@ -56,6 +72,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.RAW_STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.AUBURN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CERULEAN, Models.GENERATED);

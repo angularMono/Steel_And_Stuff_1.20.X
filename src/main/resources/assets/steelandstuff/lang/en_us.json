@@ -1,8 +1,5 @@
 {
 
-  "item.steelandstuff.cerulean": "Cerulean",
-  "item.steelandstuff.mauve": "Mauve",
-  "item.steelandstuff.steel_ingot": "Steel Ingot",
   "item.steelandstuff.nether_coal": "Nether Coal (how did u get this?)",
   "item.steelandstuff.warped_stew": "Warped Stew",
   "item.steelandstuff.crimson_stew": "Crimson Stew",
@@ -41,6 +38,28 @@
   "block.steelandstuff.cerulean_stairs": "Cerulean Stairs",
   "block.steelandstuff.cerulean_chiseled_brick_slab": "Chiseled Cerulean Brick Slab",
   "block.steelandstuff.cerulean_slab": "Cerulean Slab",
+
+  "item.steelandstuff.mauve": "Mauve",
+  "block.steelandstuff.mauve_block": "Block of Mauve",
+  "block.steelandstuff.mauve_bricks": "Mauve Bricks",
+  "block.steelandstuff.mauve_chiseled_bricks": "Chiseled Mauve Bricks",
+  "block.steelandstuff.mauve_brick_slab": "Mauve Brick Slab",
+  "block.steelandstuff.mauve_brick_stairs": "Mauve Brick Stairs",
+  "block.steelandstuff.mauve_chiseled_brick_stairs": "Chiseled Mauve Brick Stairs",
+  "block.steelandstuff.mauve_stairs": "Mauve Stairs",
+  "block.steelandstuff.mauve_chiseled_brick_slab": "Chiseled Mauve Brick Slab",
+  "block.steelandstuff.mauve_slab": "Mauve Slab",
+
+  "item.steelandstuff.steel_ingot": "Steel Ingot",
+  "item.steelandstuff.raw_steel": "Raw Steel",
+  "block.steelandstuff.steel_block": "Block of Steel",
+  "block.steelandstuff.steel_reinforced_block": "Reinforced Steel Block",
+  "block.steelandstuff.steel_stairs": "Steel Stairs",
+  "block.steelandstuff.steel_reinforced_stairs": "Reinforced Steel Stairs",
+  "block.steelandstuff.steel_slab": "Steel Slab",
+  "block.steelandstuff.steel_reinforced_slab": "Reinforced Steel Slab",
+
+
 
   "block.steelandstuff.error_block": "Error Block",
 

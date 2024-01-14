@@ -5,7 +5,6 @@ import net.boopus.steelandstuff.block.custom.ModStairsBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -60,6 +59,18 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
                     .mapColor(MapColor.RED)
             ));
+    public static final Block MAUVE_BLOCK = registerBlock("mauve_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block MAUVE_BRICKS = registerBlock("mauve_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
+    public static final Block MAUVE_CHISELED_BRICKS = registerBlock("mauve_chiseled_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)
+                    .mapColor(MapColor.RED)
+            ));
 
 
 
@@ -111,6 +122,21 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
 
             ));
+    public static final Block MAUVE_STAIRS = registerBlock("mauve_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.MAUVE_BLOCK)
+
+            ));
+    public static final Block MAUVE_BRICK_STAIRS = registerBlock("mauve_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.MAUVE_BLOCK)
+
+            ));
+    public static final Block MAUVE_CHISELED_BRICK_STAIRS = registerBlock("mauve_chiseled_brick_stairs",
+            new ModStairsBlock(ModBlocks.AUBURN_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.VERDANT_BLOCK)
+
+            ));
 
 
     //slabs
@@ -150,6 +176,53 @@ public class ModBlocks {
             new SlabBlock(
                     FabricBlockSettings.copyOf(ModBlocks.CERULEAN_BLOCK)
             ));
+    public static final Block MAUVE_SLAB = registerBlock("mauve_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.MAUVE_BLOCK)
+            ));
+    public static final Block MAUVE_BRICK_SLAB = registerBlock("mauve_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.MAUVE_BLOCK)
+            ));
+    public static final Block MAUVE_CHISELED_BRICK_SLAB = registerBlock("mauve_chiseled_brick_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.MAUVE_BLOCK)
+            ));
+
+    //steel
+    public static final Block STEEL_BLOCK = registerBlock("steel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
+                    .mapColor(MapColor.IRON_GRAY)
+            ));
+
+    public static final Block STEEL_REINFORCED_BLOCK = registerBlock("steel_reinforced_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
+                    .mapColor(MapColor.IRON_GRAY)
+                    .strength(20,1200)
+            ));
+    public static final Block STEEL_STAIRS = registerBlock("steel_stairs",
+            new ModStairsBlock(ModBlocks.STEEL_BLOCK.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.STEEL_BLOCK)
+
+            ));
+    public static final Block STEEL_REINFORCED_STAIRS = registerBlock("steel_reinforced_stairs",
+            new ModStairsBlock(ModBlocks.STEEL_REINFORCED_BLOCK.getDefaultState(),
+                    FabricBlockSettings.copyOf(ModBlocks.STEEL_REINFORCED_BLOCK)
+
+            ));
+
+
+
+    public static final Block STEEL_SLAB = registerBlock("steel_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.STEEL_BLOCK)
+            ));
+    public static final Block STEEL_REINFORCED_SLAB = registerBlock("steel_reinforced_slab",
+            new SlabBlock(
+                    FabricBlockSettings.copyOf(ModBlocks.STEEL_REINFORCED_BLOCK)
+            ));
+
+
 
     //registering blocks into minecraft
     private static Block registerBlock(String name, Block block){

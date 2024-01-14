@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "mauve_block_to_mauve",
+  "ingredients": [
+    {
+      "item": "steelandstuff:mauve_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "steelandstuff:mauve"
+  }
+}

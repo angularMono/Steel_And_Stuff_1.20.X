@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "steelandstuff:block/steel_reinforced_slab"
+    },
+    "type=double": {
+      "model": "steelandstuff:block/steel_reinforced_block"
+    },
+    "type=top": {
+      "model": "steelandstuff:block/steel_reinforced_slab_top"
+    }
+  }
+}

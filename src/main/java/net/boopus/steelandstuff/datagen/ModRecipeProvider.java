@@ -146,6 +146,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS,ModBlocks.CERULEAN_BRICKS,1);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_BRICK_STAIRS,ModBlocks.CERULEAN_BRICKS,1);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS,ModBlocks.CERULEAN_CHISELED_BRICKS,1);
+        //mauve
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAUVE, 8)
+                .pattern("SSS")
+                .pattern("SMS")
+                .pattern("SSS")
+                .input('M', Items.RED_MUSHROOM)
+                .input('S', Items.STONE)
+                .criterion(hasItem(Items.RED_MUSHROOM), conditionsFromItem(Items.RED_MUSHROOM))
+                .offerTo(exporter, new Identifier("steelandstuff", "create_mauve.json"));
+        offerShapelessRecipe(exporter, ModItems.MAUVE, ModBlocks.MAUVE_BLOCK, "mauve_block_to_mauve",4);
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BLOCK,ModItems.MAUVE);
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICKS, ModBlocks.MAUVE_BLOCK);
+        offerPolishedStoneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICKS, ModBlocks.MAUVE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICKS,ModBlocks.MAUVE_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICKS,ModBlocks.MAUVE_BRICKS,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICKS,ModBlocks.MAUVE_BLOCK,1);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.MAUVE_SLAB, ModBlocks.MAUVE_BLOCK);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.MAUVE_BRICK_SLAB, ModBlocks.MAUVE_BRICKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.MAUVE_CHISELED_BRICK_SLAB,ModBlocks.MAUVE_CHISELED_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_SLAB,ModBlocks.MAUVE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICK_SLAB,ModBlocks.MAUVE_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_SLAB,ModBlocks.MAUVE_CHISELED_BRICKS,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICK_SLAB,ModBlocks.MAUVE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_SLAB,ModBlocks.MAUVE_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_SLAB,ModBlocks.MAUVE_BRICKS,2);
+
+
+        createStairsRecipe(ModBlocks.MAUVE_STAIRS, Ingredient.ofItems(ModBlocks.MAUVE_BLOCK))
+                .criterion(hasItem(ModBlocks.MAUVE_BLOCK),conditionsFromItem(ModBlocks.MAUVE_BLOCK))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.MAUVE_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.MAUVE_BRICKS))
+                .criterion(hasItem(ModBlocks.MAUVE_BRICKS),conditionsFromItem(ModBlocks.MAUVE_BRICKS))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.MAUVE_CHISELED_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.MAUVE_CHISELED_BRICKS))
+                .criterion(hasItem(ModBlocks.MAUVE_CHISELED_BRICKS),conditionsFromItem(ModBlocks.MAUVE_CHISELED_BRICKS))
+                .offerTo(exporter);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_STAIRS,ModBlocks.MAUVE_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICK_STAIRS,ModBlocks.MAUVE_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_STAIRS,ModBlocks.MAUVE_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_STAIRS,ModBlocks.MAUVE_BRICKS,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICK_STAIRS,ModBlocks.MAUVE_BRICKS,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_STAIRS,ModBlocks.MAUVE_CHISELED_BRICKS,1);
+        //steel
 
     }
 }

@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     //debug group
+    /*
     public static final ItemGroup DEV_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Steelandstuff.MOD_ID, "error_block"),
             FabricItemGroup.builder().displayName(Text.literal("UNDER DEVELOPMENT"))
@@ -20,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHER_COAL);
 
                     }).build());
+
+     */
 
     //actual mod groups
 

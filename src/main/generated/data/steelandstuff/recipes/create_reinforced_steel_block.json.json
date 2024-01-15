@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "steelandstuff:steel_block"
+    },
+    "S": {
+      "item": "steelandstuff:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SBS",
+    "SSS"
+  ],
+  "result": {
+    "item": "steelandstuff:steel_reinforced_block"
+  }
+}

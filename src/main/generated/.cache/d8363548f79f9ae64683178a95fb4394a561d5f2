@@ -1,4 +1,4 @@
-// 1.20.4	2024-01-14T16:33:46.2064539	Steel and Stuff/Model Definitions
+// 1.20.4	2024-01-15T12:13:23.1501145	Steel and Stuff/Model Definitions
 04a67964553019fd875c836f1eea48f1d23a60f2 assets\steelandstuff\models\item\auburn_slab.json
 6de8ae2ce7eef9a2beed9a58f888fd14844884b2 assets\steelandstuff\models\block\cerulean_slab.json
 5356ccfd9118d795dedf588521a64e6127b33c7e assets\steelandstuff\models\item\mauve_chiseled_brick_slab.json
@@ -33,8 +33,8 @@ d6fec98d4edd9129ecc7ef8fb4f69b31177ae317 assets\steelandstuff\blockstates\verdan
 226a0cf916831fd6b03c07a742a913939d5c6979 assets\steelandstuff\models\item\cerulean_stairs.json
 30faa8b709bb7275fd6b5147c864fe48829e8f69 assets\steelandstuff\models\block\auburn_brick_stairs_inner.json
 73e1c367eefce41ca968adb8a914c2b51e398634 assets\steelandstuff\models\block\auburn_chiseled_brick_slab.json
-c559fd3473ca4d034d268da79844d5fbc041d7b3 assets\steelandstuff\models\item\auburn_block.json
 ea000d5d8aa6d2b09fac03e67d334108a9ecc611 assets\steelandstuff\models\item\steel_stairs.json
+c559fd3473ca4d034d268da79844d5fbc041d7b3 assets\steelandstuff\models\item\auburn_block.json
 e23a2914b82f49a4fec883a72639fb66eb9287c3 assets\steelandstuff\models\block\verdant_slab.json
 ccea7b114b1768f09bd30018b485fcfd03bfa101 assets\steelandstuff\models\block\verdant_chiseled_brick_stairs.json
 3018eea1d15667c0ec0ba74baaa47b3ebd493a9e assets\steelandstuff\models\item\verdant.json
@@ -175,7 +175,7 @@ dbb398f88e7b816833d2f8c044a55b51cca7eb9f assets\steelandstuff\blockstates\auburn
 9aee3214e5910be6409651cf28dc67dede1519b0 assets\steelandstuff\models\item\mauve_chiseled_bricks.json
 19451d9b00315f91a8eb85b5600b42cba6f118b6 assets\steelandstuff\models\item\mauve_block.json
 56ca6e513914f0ee193cfd32444eb27cccac3019 assets\steelandstuff\models\item\auburn_brick_slab.json
-a142536e46132cf38ee70f13a719d3195ccf6e26 assets\steelandstuff\blockstates\mauve_brick_stairs.json
 8902d126bf178c36858e7500e345fd2944fb9ee0 assets\steelandstuff\blockstates\auburn_slab.json
+a142536e46132cf38ee70f13a719d3195ccf6e26 assets\steelandstuff\blockstates\mauve_brick_stairs.json
 c802bc907d93df618cedd76da6056fa79a6845de assets\steelandstuff\blockstates\mauve_brick_slab.json
 e49250f115028bdf94d3ff2b9af28395f458264b assets\steelandstuff\models\block\auburn_slab_top.json

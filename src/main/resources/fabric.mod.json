@@ -8,10 +8,11 @@
 		"Jay, Lebothegizebo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/angularMono/Steel_And_Stuff_1.20.X",
+		"issues": "https://github.com/angularMono/Steel_And_Stuff_1.20.X/issues"
 	},
 	"license": "MIT",
+	"icon": "assets/steelandstuff/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

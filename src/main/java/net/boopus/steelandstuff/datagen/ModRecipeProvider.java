@@ -6,12 +6,17 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+import java.util.Locale;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
+    private static List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.RAW_STEEL);
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
@@ -146,6 +151,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS,ModBlocks.CERULEAN_BRICKS,1);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_BRICK_STAIRS,ModBlocks.CERULEAN_BRICKS,1);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CERULEAN_CHISELED_BRICK_STAIRS,ModBlocks.CERULEAN_CHISELED_BRICKS,1);
+
         //mauve
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MAUVE, 8)
                 .pattern("SSS")
@@ -189,6 +195,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_BRICK_STAIRS,ModBlocks.MAUVE_BRICKS,1);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAUVE_CHISELED_BRICK_STAIRS,ModBlocks.MAUVE_CHISELED_BRICKS,1);
         //steel
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_STEEL, 2)
+                .pattern("III")
+                .pattern("ICI")
+                .pattern("III")
+                .input('I', Items.IRON_NUGGET)
+                .input('C', Items.COAL)
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
+                .criterion(hasItem(Items.COAL),conditionsFromItem(Items.COAL))
+                .offerTo(exporter, new Identifier("steelandstuff", "create_raw_steel.json"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEEL_REINFORCED_BLOCK, 1)
+                .pattern("SSS")
+                .pattern("SBS")
+                .pattern("SSS")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('B', ModBlocks.STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.STEEL_BLOCK), conditionsFromItem(ModBlocks.STEEL_BLOCK))
+                .offerTo(exporter, new Identifier("steelandstuff", "create_reinforced_steel_block.json"));
 
+        offerBlasting(exporter, STEEL_SMELTABLES, RecipeCategory.MISC,ModItems.STEEL_INGOT,0.7f,100,"steel");
+        offerSmelting(exporter, STEEL_SMELTABLES, RecipeCategory.MISC,ModItems.STEEL_INGOT,0.7f,800,"steel");
+        offerShapelessRecipe(exporter, ModItems.STEEL_INGOT, ModBlocks.STEEL_BLOCK, "steel_ingot_to_steel_block",4);
+        offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_BLOCK,ModItems.STEEL_INGOT);
+        createStairsRecipe(ModBlocks.STEEL_STAIRS, Ingredient.ofItems(ModBlocks.STEEL_BLOCK))
+                .criterion(hasItem(ModBlocks.STEEL_BLOCK),conditionsFromItem(ModBlocks.STEEL_BLOCK))
+                .offerTo(exporter);
+        createStairsRecipe(ModBlocks.STEEL_REINFORCED_STAIRS, Ingredient.ofItems(ModBlocks.STEEL_REINFORCED_BLOCK))
+                .criterion(hasItem(ModBlocks.STEEL_REINFORCED_BLOCK),conditionsFromItem(ModBlocks.STEEL_REINFORCED_BLOCK))
+                .offerTo(exporter);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.STEEL_SLAB, ModBlocks.STEEL_BLOCK);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ModBlocks.STEEL_REINFORCED_SLAB, ModBlocks.STEEL_REINFORCED_SLAB);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_STAIRS,ModBlocks.STEEL_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_REINFORCED_STAIRS,ModBlocks.STEEL_REINFORCED_BLOCK,1);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_SLAB,ModBlocks.STEEL_BLOCK,2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STEEL_REINFORCED_SLAB,ModBlocks.STEEL_REINFORCED_BLOCK,2);
     }
 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "steel",
+  "ingredient": {
+    "item": "steelandstuff:raw_steel"
+  },
+  "result": "steelandstuff:steel_ingot"
+}

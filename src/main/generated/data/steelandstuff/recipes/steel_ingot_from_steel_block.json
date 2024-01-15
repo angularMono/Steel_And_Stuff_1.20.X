@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "steel_ingot_to_steel_block",
+  "ingredients": [
+    {
+      "item": "steelandstuff:steel_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "steelandstuff:steel_ingot"
+  }
+}
